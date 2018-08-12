@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstdlib>   // for EXIT_SUCCESS
 using std::cout;
 using std::cin;
 using std::endl;
@@ -13,6 +14,8 @@ int main() {
   cout << "How many Fibonacci Numbers do you want? ";
   cin  >> x;
   cout << "First " << x << " Fibonacci Numbers: " << Fib(x - 1) << endl;
+  
+  return EXIT_SUCCESS;
 }
 
 int Fib(int n) {
