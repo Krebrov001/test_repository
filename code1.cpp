@@ -2,6 +2,8 @@
 
 int Fib(int n);
 
+int Fact(int n);
+
 int main() {
   int x;
   
@@ -15,4 +17,11 @@ int Fib(int n) {
     return n;
   else
     return Fib(n-1) + Fib(n-2);
+}
+
+int Fact(int n) {
+  if (n == 1)
+    return 1;
+  else
+    return n * Fact(n-1);
 }
