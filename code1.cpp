@@ -1,13 +1,16 @@
 #include <iostream>
+using std::cout;
+using std::cin;
+using std::endl;
 
 int Fib(int n);
 
 int main() {
   int x;
   
-  std::cout << "How many Fibonacci Numbers do you want? ";
-  std::cin  >> x;
-  std::cout << "First " << x << " Fibonacci Numbers: " << Fib(x - 1) << std::endl;
+  cout << "How many Fibonacci Numbers do you want? ";
+  cin  >> x;
+  cout << "First " << x << " Fibonacci Numbers: " << Fib(x - 1) << endl;
 }
 
 int Fib(int n) {
