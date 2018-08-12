@@ -13,6 +13,8 @@ int main() {
   cout << "How many Fibonacci Numbers do you want? ";
   cin  >> x;
   cout << "First " << x << " Fibonacci Numbers: " << Fib(x - 1) << endl;
+  
+  return 0;
 }
 
 int Fib(int n) {
