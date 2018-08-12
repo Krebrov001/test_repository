@@ -16,10 +16,17 @@ int main() {
 }
 
 int Fib(int n) {
-  if (n <= 1)
+  if (n <= 1) {
     return n;
-  else
-    return Fib(n-1) + Fib(n-2);
+  } else {
+    int num1 = 0, num2 = 1, sum;
+    for (int i = 2; i <= n; ++i) {
+      sum = num1 + num2;
+      num1 = num2;
+      num2 = sum;
+    }
+    return num2;
+  }
 }
 
 int Fact(int n) {
