@@ -15,7 +15,8 @@ int main() {
   cin  >> x;
   cout << "First " << x << " Fibonacci Numbers: " << Fib(x - 1) << endl;
   
-  return EXIT_SUCCESS;
+
+  return 0;
 }
 
 int Fib(int n) {
